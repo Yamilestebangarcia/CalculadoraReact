@@ -1,0 +1,9 @@
+.calculadora {
+  width: 80%;
+  max-width: 400px;
+  min-width: 250px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 25vh;
+}
