@@ -1,0 +1,4 @@
+.Meteo_tabla {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import "./Calculadora.css";
-import Btn from "../components/btn/Btn";
-import Pantalla from "../components/pantalla/Pantalla";
+import Btn from "../../components/btn/Btn";
+import Pantalla from "../../components/pantalla/Pantalla";
 
 let err = false;
 let operando1 = null;
@@ -103,28 +103,30 @@ function Calculadora() {
   };
 
   return (
-    <div className="calculadora">
-      <Pantalla className={"pantalla"} value={valor}></Pantalla>
-      <Btn value={"1"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"2"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"3"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"+"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"4"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"5"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"6"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"-"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"7"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"8"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"9"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"*"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"C"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn value={"0"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
-      <Btn
-        value={"="}
-        ObtenerValor={ObtenerValor}
-        className={"numero mas"}
-      ></Btn>
-      <Btn value={"/"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+    <div className="bodycal">
+      <div className="calculadora">
+        <Pantalla className={"pantalla"} value={valor}></Pantalla>
+        <Btn value={"1"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"2"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"3"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"+"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"4"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"5"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"6"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"-"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"7"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"8"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"9"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"*"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"C"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn value={"0"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+        <Btn
+          value={"="}
+          ObtenerValor={ObtenerValor}
+          className={"numero mas"}
+        ></Btn>
+        <Btn value={"/"} ObtenerValor={ObtenerValor} className={"numero"}></Btn>
+      </div>
     </div>
   );
 }
